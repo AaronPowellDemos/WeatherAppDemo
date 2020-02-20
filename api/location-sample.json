@@ -1,0 +1,58 @@
+{
+  "summary": {
+    "query": "tempe nsw",
+    "queryType": "NON_NEAR",
+    "queryTime": 11,
+    "numResults": 1,
+    "offset": 0,
+    "totalResults": 6,
+    "fuzzyLevel": 1
+  },
+  "results": [
+    {
+      "type": "Geography",
+      "id": "AU/GEO/p0/3850",
+      "score": 3.91825008392334,
+      "entityType": "MunicipalitySubdivision",
+      "address": {
+        "municipalitySubdivision": "Tempe",
+        "municipality": "Sydney",
+        "countrySecondarySubdivision": "Sydney",
+        "countrySubdivision": "New South Wales",
+        "countryCode": "AU",
+        "country": "Australia",
+        "countryCodeISO3": "AUS",
+        "freeformAddress": "Sydney Tempe, New South Wales"
+      },
+      "position": {
+        "lat": -33.92394,
+        "lon": 151.16161
+      },
+      "viewport": {
+        "topLeftPoint": {
+          "lat": -33.9157,
+          "lon": 151.15497
+        },
+        "btmRightPoint": {
+          "lat": -33.93318,
+          "lon": 151.17439
+        }
+      },
+      "boundingBox": {
+        "topLeftPoint": {
+          "lat": -33.9157,
+          "lon": 151.15497
+        },
+        "btmRightPoint": {
+          "lat": -33.93318,
+          "lon": 151.17439
+        }
+      },
+      "dataSources": {
+        "geometry": {
+          "id": "00005831-3200-1200-0000-00007d31dbd0"
+        }
+      }
+    }
+  ]
+}

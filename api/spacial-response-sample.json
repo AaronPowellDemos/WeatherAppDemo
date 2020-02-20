@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "sourcePoint": {
+      "lat": 47.622942,
+      "lon": -122.316456
+    },
+    "udid": null,
+    "information": "3 points processed in user data"
+  },
+  "result": [
+    {
+      "distanceInMeters": 1587492.66,
+      "position": {
+        "lat": 40.516153406773952,
+        "lon": -105.02860293715861
+      },
+      "geometryId": "1001"
+    }
+  ]
+}
