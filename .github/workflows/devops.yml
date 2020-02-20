@@ -1,0 +1,36 @@
+name: DevOps!
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    name: Build and Deploy Job
+    steps:
+      - uses: actions/checkout@v1
+
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: "3.1.100"
+      - run: dotnet publish --output dist/api api/api.fsproj
+
+      # - uses: actions/setup-node@v1
+      #   with:
+      #     node-version: "12.x"
+      # - run: npm run build
+      #   working-directory: app
+
+      - name: Build And Deploy
+        uses: joslinmicrosoft/staticsitesactionoryx@canary2
+        with:
+          azure_pages_api_token: ${{ secrets.AZURE_PAGES_API_TOKEN_LEMON_FLOWER_03812C04 }}
+          action: "upload"
+          api_location: "api" # Api Content Path - optional
+          app_location: "app" # Built App Content Directory - optional
+          app_artifact_location: "app/build" # Built App Content Directory - optional
+          api_artifact_location: "dist/api" # Built App Content Directory - optional
+        env:
+          BUILD_ID: ${{ github.sha }}
