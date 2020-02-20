@@ -20,7 +20,7 @@
     <None Include="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="local.settings.json">
+    <None Include="local.settings.json" Condition="'$(CONFIG)'=='DEBUG'">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <Compile Include="BomResult.fs" />
