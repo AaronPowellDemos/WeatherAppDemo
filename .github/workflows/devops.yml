@@ -30,7 +30,7 @@ jobs:
           action: "upload --verbose"
           api_location: "api" # Api Content Path - optional
           app_location: "app" # Built App Content Directory - optional
-          app_artifact_location: "app/build" # Built App Content Directory - optional
+          # app_artifact_location: "app/build" # Built App Content Directory - optional
           api_artifact_location: "dist/api" # Built App Content Directory - optional
         env:
           BUILD_ID: ${{ github.sha }}
